@@ -1,58 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My CV</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>myResume.io</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* A4-like paper size */
+    .a4 {
+      width: 210mm;
+      min-height: 297mm;
+      margin: auto;
+      background: white;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
+    @media print {
+      body { background: none; }
+      .a4 { box-shadow: none; margin: 0; }
+    }
+  </style>
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-200 flex justify-center p-6">
 
-  <div class="max-w-5xl mx-auto bg-white shadow-lg grid grid-cols-3">
+  <div class="a4 grid grid-cols-3">
     
     <!-- LEFT SIDEBAR -->
     <aside class="bg-gray-900 text-white p-6 col-span-1">
       <!-- Photo -->
-      <div class="flex justify-center">
-        <img src="image.jpg" alt="Profile Photo" class="rounded-full w-28 h-28 border-4 border-white">
+      <div class="flex justify-center mb-6">
+        <img src="image.jpg" alt="Profile" class="rounded-full w-28 h-28 border-4 border-white">
       </div>
 
       <!-- Contact -->
-      <div class="mt-6">
+      <div class="mb-6">
         <h2 class="text-lg font-bold mb-2">CONTACT</h2>
-        <p>📞 +885967073315</p>
-        <p>📧 yemrosa1@.com</p>
-        <p>📍 Phnom Penh, Cambodia</p>
-        <p>🌐 www.myportfolio.com</p>
+        <p><i class="fa-solid fa-phone mr-2"></i> +885967073315</p>
+        <p><i class="fa-solid fa-envelope mr-2"></i> yemrosa1@.com</p>
+        <p><i class="fa-solid fa-location-dot mr-2"></i> Phnom Penh, Cambodia</p>
+        <p><i class="fa-solid fa-globe mr-2"></i> www.myportfolio.com</p>
       </div>
 
       <!-- Skills -->
-      <div class="mt-6">
+      <div class="mb-6">
         <h2 class="text-lg font-bold mb-2">SKILLS</h2>
         <ul class="space-y-1 text-sm">
-          <li>Project Management</li>
-          <li>Teamwork</li>
-          <li>Leadership</li>
-          <li>Communication</li>
-          <li>Critical Thinking</li>
-          <li>Python & JavaScript</li>
+          <li><i class="fa-solid fa-code mr-2"></i> Python & JavaScript</li>
+          <li><i class="fa-solid fa-lightbulb mr-2"></i> Problem Solving</li>
+          <li><i class="fa-solid fa-laptop-code mr-2"></i> Web Development</li>
+          <li><i class="fa-solid fa-diagram-project mr-2"></i> Foundation of DSA</li>
+          <li><i class="fa-solid fa-users mr-2"></i> Teamwork</li>
+          <li><i class="fa-solid fa-star mr-2"></i> Leadership</li>
         </ul>
       </div>
 
       <!-- Languages -->
-      <div class="mt-6">
+      <div class="mb-6">
         <h2 class="text-lg font-bold mb-2">LANGUAGES</h2>
-        <p>Khmer (Fluent)</p>
-        <p>English (Fluent)</p>
+        <p><i class="fa-solid fa-language mr-2"></i> Khmer (Fluent)</p>
+        <p><i class="fa-solid fa-language mr-2"></i> English (Fluent)</p>
+        <p><i class="fa-solid fa-language mr-2"></i> Chinese (Basic)</p>
       </div>
 
       <!-- Reference -->
-      <div class="mt-6">
+      <div>
         <h2 class="text-lg font-bold mb-2">REFERENCE</h2>
-        <p><strong>Jane Smith</strong></p>
-        <p>CTO, TechCorp</p>
-        <p>📞 123-456-7890</p>
-        <p>📧 jane.smith@company.com</p>
+        <p><strong>Dr. Suyash Jai Shree</strong></p>
+        <p>Head Apartment of CS</p>
+        <p><i class="fa-solid fa-phone mr-2"></i> +919310493782</p>
+        <p><i class="fa-solid fa-envelope mr-2"></i> suyash@hrc.su.ac.in</p>
       </div>
     </aside>
 
@@ -61,12 +78,12 @@
       <!-- Header -->
       <div class="border-b pb-4 mb-6">
         <h1 class="text-3xl font-bold">Rosa Yem</h1>
-        <p class="text-lg text-gray-600">Web Developer</p>
+        <p class="text-lg text-gray-600">Computer Science Student</p>
       </div>
 
       <!-- Profile -->
       <section class="mb-6">
-        <h2 class="text-xl font-bold mb-2">PROFILE</h2>
+        <h2 class="text-xl font-bold mb-2"><i class="fa-solid fa-user mr-2 text-gray-700"></i>PROFILE</h2>
         <p class="text-gray-700">
           I am a Computer Science student passionate about Artificial Intelligence and Python.
           I enjoy solving problems, creating projects, and building modern web applications.
@@ -75,7 +92,7 @@
 
       <!-- Work Experience -->
       <section class="mb-6">
-        <h2 class="text-xl font-bold mb-2">WORK EXPERIENCE</h2>
+        <h2 class="text-xl font-bold mb-2"><i class="fa-solid fa-briefcase mr-2 text-gray-700"></i>WORK EXPERIENCE</h2>
         <div class="mb-4">
           <h3 class="font-bold">Intern, AI Lab | 2024 - Present</h3>
           <ul class="list-disc ml-6 text-gray-700">
